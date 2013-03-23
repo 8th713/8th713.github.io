@@ -1,0 +1,49 @@
+.item {
+  margin: 1em 0;
+  background-color: #eee;
+}
+
+.item:before,
+.item:after {
+  content: '';
+  display: table;
+  line-height: 0;
+}
+
+.item:after {
+  clear: both;
+}
+
+.item:hover {
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.thumbnail {
+  float: left;
+  margin-right: 1em;
+  line-height: 0;
+  background-color: #eee;
+}
+
+.item:nth-of-type(even) .thumbnail {
+  float: right;
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+.thumbnail img {
+  width: 260px;
+  height: 140px;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #999999;
+  box-shadow: none;
+}
+
+.title {
+  margin: 0 1em;
+}
